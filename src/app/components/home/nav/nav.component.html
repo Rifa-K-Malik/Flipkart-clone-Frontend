@@ -1,0 +1,103 @@
+<div class="navbar justify-content-center">
+
+
+    <div class="d-flex navbar_logo">
+        <img src="assets/img/logo.png">
+        <i>Explore <span>Plus</span></i>
+    </div>
+
+
+    <div class="navbar_i">
+        <input type="text" placeholder="Search for products, brands and more">
+        <mat-icon>search</mat-icon>
+    </div>
+
+    <div class="navbar_b">
+        <button mat-flat-button (click)="display1 == 'hide1'? display1 = 'show1': display1 ='hide1'">Login</button>
+        <div class="btn_login mat-elevation-z2" [ngClass]="display1">
+            <div class="d-flex justify-content-between btn_login_sn">
+                <span>New customer?</span>
+                <span class="btn_login_sn_s2">Sign Up</span>
+            </div>
+            <hr>
+            <div class="btn_login_sh">
+                <ul>
+                    <li>
+                        <mat-icon>account_circle</mat-icon>My Profile
+                    </li>
+                    <hr>
+                    <li>
+                        <mat-icon>add</mat-icon>Flipkart Plus Zone
+                    </li>
+                    <hr>
+                    <li>
+                        <mat-icon>list_alt</mat-icon>Orders
+                    </li>
+                    <hr>
+                    <li>
+                        <mat-icon>favorite</mat-icon>Wishlist
+                    </li>
+                    <hr>
+                    <li>
+                        <mat-icon>confirmation_number </mat-icon>Rewards
+                    </li>
+                    <hr>
+                    <li>
+                        <mat-icon>account_balance_wallet</mat-icon>Gift Cards
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div>
+        <div class="d-flex align-items-center navbar_s" (click)="display == 'hide'? display = 'show': display ='hide'">
+            <span>
+                More
+            </span>
+            <mat-icon>
+                expand_more
+            </mat-icon>
+        </div>
+        <div class="btn_login1 mat-elevation-z2" [ngClass]="display">
+            <ul>
+                <li>
+                    <mat-icon>notifications</mat-icon>Notification Preferences
+                </li>
+                <hr>
+                <li>
+                    <mat-icon>shopping_bag</mat-icon>Sell on Flipkart
+                </li>
+                <hr>
+                <li>
+                    <mat-icon>live_help</mat-icon>24x7 Customer Care
+                </li>
+                <hr>
+                <li>
+                    <mat-icon>trending_up</mat-icon>Advertise
+                </li>
+                <hr>
+                <li>
+                    <mat-icon>get_app</mat-icon>Download App
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="d-flex align-items-center navbar_ss" [routerLink]="[ '/addtocart' ]">
+        <mat-icon>
+            shopping_cart
+        </mat-icon>
+        <span>
+            Cart
+        </span>
+    </div>
+
+</div>
+
+
+
+    

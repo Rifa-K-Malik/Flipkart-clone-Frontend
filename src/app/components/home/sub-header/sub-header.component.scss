@@ -1,0 +1,60 @@
+.sh{
+    border: 2px solid rgb(216, 215, 215);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    &_ul{
+        margin-bottom: 0;
+        &_li{
+            float: left;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin-right: 30px;
+            cursor: pointer;
+            &:hover{
+                color: #2874f0;
+            }
+            mat-icon{
+                color: rgb(143, 143, 143);
+            }
+        }
+    }
+    &_electronics{
+        padding: 20px;
+        position: absolute;
+        margin-top: 30px;
+        width: 90%;
+        left: 5%;
+        background-color: white;
+        z-index: 3;
+        h4{
+            font-weight: bold;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+        ul{
+            margin-bottom: 0;
+            padding-left: 0;
+            li{
+                list-style: none;
+                color: gray;
+                line-height: 1.7rem;
+                cursor: pointer;
+                &:hover{
+                   text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.show  {
+    visibility: visible;
+}
+
+.hide{
+    visibility: hidden;
+}

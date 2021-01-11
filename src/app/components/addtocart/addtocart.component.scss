@@ -1,0 +1,97 @@
+.addtocart_cnt{
+    &_row{
+        padding: 20px;
+        &_col{
+            &_top{
+                border: 1px solid rgb(221, 221, 221);
+                height: fit-content;
+                text-align: center;
+                padding: 10px;
+                img{
+                    height: 350px;
+                }
+            }
+            &_button{
+                text-align: center;
+                button{
+                    height: 45px;
+                    width: 200px;
+                    margin: 10px 5px;
+                    color: white;
+                    font-size: 15px;
+                    mat-icon{
+                        font-size: 21px;
+                    }
+                }
+                &_b1{
+                    background-color: orange;
+                }
+                &_b2{
+                    background-color: rgb(252, 108, 56);
+                }
+            }
+        }
+    }
+}
+
+.positn{
+    position: sticky;
+    top: 60px;
+}
+.addtocart_cnt_row_right{
+    &_icon1{
+        transform: scaleX(-1);
+        margin-left: 30px;
+    }
+    &_card{
+        margin-top: 30px;
+        margin-bottom: 40px;
+        width: 300px;
+        &_c1{
+            padding: 10px 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: rgb(227, 242, 255);
+        }
+        &_c2{
+            padding: 10px 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
+
+.badge{
+padding: 2px;
+height: 20px;
+font-size: 14px;
+margin-right: 10px;
+}
+
+.clr{
+    display: flex;
+    margin: 30px 0px 20px 0px;
+    &_widt{
+        width: 15%;
+        color: gray;
+        font-weight: 500;
+    }
+    &_img{
+        img{
+            height: 50px;
+            padding: 2px 10px;
+            border: 1px solid black;
+            margin: 0px 5px;
+        }
+    }
+    &_ul{
+        ul{
+            padding-left: 0;
+            li{
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

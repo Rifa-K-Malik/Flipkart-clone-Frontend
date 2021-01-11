@@ -1,0 +1,39 @@
+.slider{
+    position: relative;
+   padding: 5px 0px;
+    &_btn{
+        position: absolute;
+        top: 50%;
+        margin-top: -50px;
+        cursor: pointer;
+        z-index: 2;
+        
+        &_bbb{
+            background-color: white;
+            font-size: 84px;
+            font-weight: bold;
+            color: black;
+            width: 47px;
+            height: 104px;
+            border: 1px solid white;
+            transition: 0.6s ease;
+            &:hover{
+                background-color: rgb(202, 200, 200);
+            }
+        }
+       
+    }
+}
+
+.btn1{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.btn2{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.slide{
+    z-index: 1;
+}

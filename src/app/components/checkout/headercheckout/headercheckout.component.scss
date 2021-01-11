@@ -1,0 +1,25 @@
+.navbar{
+    background-color: #2874f0;
+    z-index: 10;
+    position: sticky;
+    top: 1px;
+    &_logo{
+        flex-direction: column;
+        margin: 0% 0% 0% 15%;
+        img{
+            height: 20px;
+        }
+        i{
+            color: white;
+            cursor: pointer;
+            span{
+                color: yellow;
+            }
+            &:hover{
+               text-decoration: underline; 
+            }
+        }
+    }
+    
+}
+

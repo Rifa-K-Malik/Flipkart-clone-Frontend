@@ -1,0 +1,31 @@
+<div class="slider">
+    <div class="d-flex w-100 justify-content-between slider_btn">
+        <div>
+            <button (click)="owlCar1.prev()" matRipple class=" btn1 slider_btn_bbb ">
+                &#8249;
+            </button>
+        </div>
+        <div>
+            <button class="btn2 slider_btn_bbb" (click)="owlCar1.next()" matRipple>
+                &#8250;
+            </button>
+        </div>
+
+    </div>
+    <div class="wholeCarousel">
+        <owl-carousel-o [options]="customOptions" #owlCar1>
+
+            <ng-container *ngFor="let item of images">
+                <ng-template carouselSlide>
+                    <div class="slide">
+                        <img [src]="item" style="height: 300px;" alt="">
+                    </div>
+                </ng-template>
+
+            </ng-container>
+
+
+        </owl-carousel-o>
+    </div>
+
+</div>

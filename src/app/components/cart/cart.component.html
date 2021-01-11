@@ -1,0 +1,98 @@
+<div class="cart">
+    <app-cartheader></app-cartheader>
+    <div class="cart-cnt">
+        <div class="row px-5 py-3">
+
+
+            <div class="col-8 cart-cnt_left">
+                <div class="card cart-cnt_left_card">
+
+
+                    <div class="cart-cnt_left_card_top">
+                        <span class="cart-cnt_left_card_top_span1">MY Cart (1)</span>
+                        <span class="cart-cnt_left_card_top_span2 cgray"><mat-icon>location_on</mat-icon> Deliver to
+                            <mat-form-field appearance="legacy">
+                                <input matInput placeholder="Enter Delivery Pincode">
+                            </mat-form-field>
+                        </span>
+                    </div>
+
+
+                    <div class="cart-cnt_left_card_mid">
+                        <div class="row cart-cnt_left_card_mid_row">
+                            <div class="col-8 cart-cnt_left_card_mid_row_left">
+                                <div class="cart-cnt_left_card_mid_row_left_img">
+                                    <img class="img-fluid" src="assets/img/m5.jpeg">
+                                </div>
+                                <div class="cart-cnt_left_card_mid_row_left_cnt">
+                                    <h3>Realme C12 (Power Silver, 32 GB)</h3>
+                                    <p>3 GB RAM</p>
+                                    <p class="mb-4">Seller:Vision Star</p>
+                                    <div class="fbold">
+                                        <span class="feigtn mr-2">&#x20B9;8,499 </span>
+                                        <span class="cgray mr-2"> <del>&#x20B9;10,999 </del></span>
+                                        <span class="cgreen csix mr-2"> 22% Off </span>
+                                        <span class="cgreen mr-2"> 2 offers available </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <p class="cbold">Delivery in 2 days, Sun | <span class="cgreen">Free </span>
+                                    <del>&#x20B9;40</del>
+                                </p>
+                                <p class="cgray ftwe">7 Days Replacement Policy</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-cnt_left_card_bottom">
+                        <button mat-stroked-button disabled> - </button>
+                        <input type="text" placeholder="1">
+                        <button mat-stroked-button> + </button>
+                        <span class="fbold fsix mr-3">SAVE FOR LATER</span>
+                        <span class="fbold fsix">REMOVE</span>
+                    </div>
+
+                    <div class="card-cnt_left_card_button  mat-elevation-z4">
+                        <button mat-stroked-button [routerLink] = "['/checkout']" >PLACE ORDER</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-4 cart-cnt_right">
+                <div class="card p-3 cart-cnt_right_rtop">
+                    <p class="mb-0 cgray fbold">PRICE DETAILS</p>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span>Price (1 item)</span><span>&#x20B9;10,999</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span>Discount</span><span class="cgreen"> - &#x20B9;2,500</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span>Delivery Charges</span><span class="cgreen">Free</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between fbold">
+                        <span>Total Amount</span><span>&#x20B9;8,499</span>
+                    </div>
+                    <hr>
+                    <div>
+                        <p class="cgreen fbold mb-0">You will save &#x20B9;2,500 on this order</p>
+                    </div>
+                </div>
+
+
+                <div class="cart-cnt_right_rbottom d-flex align-items-center pt-3">
+                    <mat-icon class="mr-2">verified_user</mat-icon>
+                    <span>Safe and Secure Payments. Easy returns. 100% Authentic products.</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <app-cartfooter></app-cartfooter>
+</div>

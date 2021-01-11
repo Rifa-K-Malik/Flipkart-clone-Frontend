@@ -1,0 +1,184 @@
+.navbar{
+    background-color: #2874f0;
+    z-index: 10;
+    position: sticky;
+    top: 1px;
+    &_logo{
+        flex-direction: column;
+        margin: 0px 15px;
+        img{
+            height: 20px;
+        }
+        i{
+            color: white;
+            cursor: pointer;
+            span{
+                color: yellow;
+            }
+            &:hover{
+               text-decoration: underline; 
+            }
+        }
+    }
+    &_i{
+        margin: 0px 15px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        input{
+            height: 35px;
+            width: 500px;
+            border-radius: 5px;
+            padding-left: 10px;
+            border: 1px solid white;
+        }
+        mat-icon{
+            position: absolute;
+            left: 94%;
+            color:  #2874f0;
+            font-weight: bold;
+        }
+    }
+    &_b{
+        margin: 0px 15px;
+        position: relative;
+        z-index: 19;
+        button{
+            width: 100px;
+            height: 32px;
+            border-radius: 5px;
+            font-weight: 900;
+            color: #2874f0;
+            border: 1px solid white;
+            line-height: 0;
+        }
+    }
+   
+    &_s{
+        margin: 0px 15px;
+        position: relative;
+        cursor: pointer;
+        span{
+            margin: 0px 5px;
+            color: white;
+            font-size: 16px;
+        } 
+        mat-icon{
+            color: white;
+        }
+    }
+    &_ss{
+        color: white;
+        font-size: 16px;
+        margin: 0px 15px;
+        position: relative;
+        cursor: pointer;
+        span{
+            margin: 0px 5px;
+        }
+    }
+}
+
+.btn_login{
+    width: 250px;
+    height: fit-content;
+    padding: 20px;
+    position: absolute;
+    margin-top: 10px;
+    left: -70%;
+    background-color: white;
+    visibility: hidden;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 50px;
+        height:50px;
+        background: white;
+        left: 50%;
+        z-index: -1;
+        top: 0px;
+        transform: translateX(-50%) rotate(45deg);        
+    }
+    &_sn{
+        font-weight: bold;
+        &_s2{
+            color: #2874f0;
+            
+        }
+    }
+    &_sh{
+        ul{
+            margin-bottom: 0;
+            padding-inline-start: 0px;
+            li{
+                list-style: none;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                &:hover{
+                    color: #2874f0;
+                 }
+                mat-icon{
+                    color: #2874f0;
+                    margin-right: 20px;
+                }
+            }
+        }
+    } 
+}
+
+.btn_login1{
+    width: 250px;
+    height: fit-content;
+    padding: 20px;
+    position: absolute;
+    margin-top: 10px;
+    left: 65%;
+    background-color: white;
+    visibility: hidden;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 50px;
+        height:50px;
+        background: white;
+        left: 50%;
+        z-index: -1;
+        top: 0px;
+        transform: translateX(-50%) rotate(45deg);        
+    }
+    ul{
+        margin-bottom: 0;
+         padding-inline-start: 0px;
+        li{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            &:hover{
+                color: #2874f0;
+            }
+            mat-icon{
+                color: #2874f0;
+                margin-right: 20px;
+                font-size: 24px;
+            }
+        }
+    }
+} 
+
+.show{
+    visibility: visible;
+ }
+ 
+ .hide{
+     visibility: hidden;
+ }
+
+ .show1{
+    visibility: visible;
+ }
+ 
+ .hide1{
+     visibility: hidden;
+ }

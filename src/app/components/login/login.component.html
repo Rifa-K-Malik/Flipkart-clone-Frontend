@@ -1,0 +1,37 @@
+<div class="container login">
+    <div class="row login_row">
+
+
+        <div class="col-5 login_row_colleft">
+            <h1>Login</h1>
+            <p>Get access to your Orders, wishlist and Recommendations</p>
+        </div>
+
+
+        <div class="col-7 login_row_colright">
+            <p>
+                <mat-form-field appearance="legacy" class="w1">
+                    <mat-label>Enter Email/Mobile number</mat-label>
+                    <input matInput placeholder="">
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="legacy" class="w1">
+                    <mat-label>Enter Password</mat-label>
+                    <input matInput placeholder="">
+                    <span matSuffix class="cblue">Forgot?</span>
+                </mat-form-field>
+            </p>
+            <p>
+                <button mat-stroked-button class="w1 login_row_colright_b1">Login</button>
+            </p>
+            <p class="cgray">OR</p>
+            <p>
+                <button mat-stroked-button class="w1 login_row_colright_b2">Request OTP</button>
+            </p>
+            <p class="cblue">New to Flipkart? Create an account</p>
+
+        </div>
+    </div>
+    <button class="close" [routerLink] = "['/home']" ><mat-icon>cancel</mat-icon> </button>
+</div>
