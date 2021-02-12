@@ -182,3 +182,7 @@
  .hide1{
      visibility: hidden;
  }
+
+ .navbar_s:hover + div{
+     visibility: visible;
+ }

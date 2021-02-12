@@ -1,0 +1,19 @@
+<div class="dealscontent">
+
+    <div class="btn">
+        <button mat-flat-button class="mat-elevation-z5">&#8250;</button>
+    </div>
+    <ng-container *ngFor="let products of Deals">
+
+        <div class="content">
+            <div class="content_img">
+                <img [src]="products.img">
+            </div>
+            <p class="content_pblack">{{products.name}}</p>
+            <p class="content_pgreen">{{products.price}}</p>
+            <p class="content_pgray">{{products.text}}</p>
+        </div>
+
+    </ng-container>
+
+</div>

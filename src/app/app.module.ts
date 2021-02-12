@@ -35,6 +35,7 @@ import { Pro1hComponent } from './components/products/pro1h/pro1h.component';
 import { Pro2cComponent } from './components/products/pro2c/pro2c.component';
 import { Pro3Component } from './components/products/pro3/pro3.component';
 import { Pro4Component } from './components/products/pro4/pro4.component';
+import { EgComponent } from './components/eg/eg.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { Pro4Component } from './components/products/pro4/pro4.component';
     Pro1hComponent,
     Pro2cComponent,
     Pro3Component,
-    Pro4Component
+    Pro4Component,
+    EgComponent
   ],
   imports: [
     BrowserModule,

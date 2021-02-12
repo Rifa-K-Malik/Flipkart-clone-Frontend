@@ -3,78 +3,50 @@
     <div class="btn">
         <button mat-flat-button class="mat-elevation-z5">&#8250;</button>
     </div>
+    <ng-container *ngFor="let products of Deals">
 
-    <div class="content">
-        <div class="content_img">
-            <img src="assets/img/11.jpeg">
+        <div class="content">
+            <div class="content_img">
+                <img [src]="products.img">
+            </div>
+            <p class="content_pblack">{{products.name}}</p>
+            <p class="content_pgreen">{{products.price}}</p>
+            <p class="content_pgray">{{products.text}}</p>
         </div>
-        <p class="content_pblack">Badminton & Footballs</p>
-        <p class="content_pgreen">From &#x20B9;199</p>
-        <p class="content_pgray">Shop Now!</p>
-    </div>
 
-    <div class="content">
-        <div class="content_img">
-            <img src="assets/img/12.jpeg">
-        </div>
-        <p class="content_pblack">Headphones</p>
-        <p class="content_pgreen">Upto 50% off</p>
-        <p class="content_pgray">JBL Sony & more</p>
-    </div>
-    
-    <div class="content">
-        <div class="content_img">
-            <img src="assets/img/13.jpeg">
-        </div>
-        <p class="content_pblack">Home Hygiene Essentials</p>
-        <p class="content_pgreen">From &#x20B9;99</p>
-        <p class="content_pgray">Veggie Clean & more</p>
-    </div>
-    
-    <div class="content">
-        <div class="content_img">
-            <img src="assets/img/14.jpeg">
-        </div>
-        <p class="content_pblack">Kettles, Mixers & more</p>
-        <p class="content_pgreen">Up to 70% Off</p>
-        <p class="content_pgray">Best Deals!</p>
-    </div>
-    
-    <div class="content">
-        <div class="content_img">
-            <img src="assets/img/15.jpeg">
-        </div>
-        <p class="content_pblack">Makeup Bestsellers</p>
-        <p class="content_pgreen">From &#x20B9;99+5% Extra Off</p>
-        <p class="content_pgray">Lakme, Maybelline</p>
-    </div>
-    
-    <div class="content">
-        <div class="content_img">
-            <img src="assets/img/16.jpeg">
-        </div>
-        <p class="content_pblack">Sparx, Asian & more</p>
-        <p class="content_pgreen">From &#x20B9;199+Extra5% Off</p>
-        <p class="content_pgray">Shoes, Sandals & more</p>
-    </div>
-    
-    <div class="content">
-        <div class="content_img">
-            <img src="assets/img/17.jpeg">
-        </div>
-        <p class="content_pblack">Puma, Myra & more</p>
-        <p class="content_pgreen">30-60%+Extra 5% Off</p>
-        <p class="content_pgray">Flats, Shoes & more</p>
-    </div>
-    
-    <div class="content">
-        <div class="content_img">
-            <img src="assets/img/18.jpeg">
-        </div>
-        <p class="content_pblack">Levi's, USPA</p>
-        <p class="content_pgreen">40-70% Off</p>
-        <p class="content_pgray">Jackets, T-Shirts & more</p>
-    </div>
-    
-    
+    </ng-container>
+
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="dealscontent">
+
+    <div class="btn">
+        <button mat-flat-button class="mat-elevation-z5">&#8250;</button>
+    </div>
+    <ng-container *ngFor="let products of Deals">
+
+        <div class="content">
+            <div class="content_img">
+                <img [src]="products.img">
+            </div>
+            <p class="content_pblack">{{products.name}}</p>
+            <p class="content_pgreen">{{products.price}}</p>
+            <p class="content_pgray">{{products.text}}</p>
+        </div>
+
+    </ng-container>
+
+</div> -->
