@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-section3',
@@ -18,7 +19,7 @@ export class Section3Component implements OnInit {
       {
         img:'assets/img/11.jpeg',
         name:'Badminton & Footballs',
-        price:'From &#x20B9;199',
+        price:`From &#x20B9;199`,
         text:'Shop Now!'
       },
       {
@@ -65,4 +66,30 @@ export class Section3Component implements OnInit {
       },
     ]
   }
+
+  customOptions: OwlOptions = {
+    loop: false,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dots: false,
+    margin:10,
+    center: false,
+    autoplay: false,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    navSpeed: 700,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 5,
+      },
+      786: {
+        items: 7,
+      },
+    },
+    nav: false,
+  };
 }

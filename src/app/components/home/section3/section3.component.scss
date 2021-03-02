@@ -19,6 +19,11 @@
         width: 150px;
         text-align: center;
         margin: auto;
+        img{
+            height: auto;
+            width: auto;
+margin: auto;
+        }
     }
     &_pblack{
         margin-top: 10px;
@@ -54,4 +59,8 @@
             background-color: rgb(230, 230, 230);
         }
     }
+}
+
+.wholeCarousel{
+    width: 100%;
 }

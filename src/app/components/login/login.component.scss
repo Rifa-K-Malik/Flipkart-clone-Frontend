@@ -2,7 +2,7 @@
     border: 1px solid rgb(230, 230, 230);
     width: 600px;
     position: relative;
-    margin: 80px auto;
+    // margin: 80px auto;
     &_row{
         &_colleft{
             height: 500px;
@@ -56,5 +56,12 @@
     line-height: 0;
     mat-icon{
         font-size: 30px;
+    }
+}
+
+.signup{
+    cursor: pointer;
+    &:hover{
+        text-decoration: underline;
     }
 }

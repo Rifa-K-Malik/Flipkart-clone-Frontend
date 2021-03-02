@@ -13,7 +13,7 @@
     </div>
 
     <div class="navbar_b">
-        <button mat-flat-button (mouseenter) ="display1 = 'show1'" (mouseleave) = "display1 = 'hide1'" (click)="display1 == 'hide1'? display1 = 'show1': display1 ='hide1'">Login</button>
+        <button mat-flat-button (mouseenter) ="display1 = 'show1'" (mouseleave) = "display1 = 'hide1'" (click)="openDialog()">Login</button>
         <div class="btn_login mat-elevation-z2" [ngClass]="display1">
             <div class="d-flex justify-content-between btn_login_sn">
                 <span>New customer?</span>

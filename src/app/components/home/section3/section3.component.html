@@ -1,4 +1,4 @@
-<div class="dealscontent">
+<!-- <div class="dealscontent">
 
     <div class="btn">
         <button mat-flat-button class="mat-elevation-z5">&#8250;</button>
@@ -10,20 +10,41 @@
                 <img [src]="products.img">
             </div>
             <p class="content_pblack">{{products.name}}</p>
-            <p class="content_pgreen">{{products.price}}</p>
+            <p class="content_pgreen" [innerHTML]="products.price"></p>
             <p class="content_pgray">{{products.text}}</p>
         </div>
 
     </ng-container>
 
+</div> -->
+
+<div class="dealscontent">
+
+    <div class="btn">
+        <button mat-flat-button class="mat-elevation-z5" (click)="owlCar1.next()" >&#8250;</button>
+    </div>
+    <div class="wholeCarousel">
+        <owl-carousel-o [options]="customOptions" #owlCar1>
+    
+            <ng-container *ngFor="let products of Deals">
+                <ng-template carouselSlide>
+                    <div class="content">
+                        <div class="content_img">
+                            <img [src]="products.img">
+                        </div>
+                        <p class="content_pblack">{{products.name}}</p>
+                        <p class="content_pgreen" [innerHTML]="products.price"></p>
+                        <p class="content_pgray">{{products.text}}</p>
+                    </div>
+                </ng-template>
+    
+            </ng-container>
+    
+    
+        </owl-carousel-o>
+    </div>
+
 </div>
-
-
-
-
-
-
-
 
 
 

@@ -29,11 +29,11 @@
             <p>
                 <button mat-stroked-button class="w1 login_row_colright_b2">Request OTP</button>
             </p>
-            <p class="cblue">New to Flipkart? Create an account</p>
+            <p class="cblue signup" [routerLink]= "['/signup']" mat-dialog-close >New to Flipkart? Create an account</p>
 
         </div>
     </div>
-    <button class="close" [routerLink]="['/home']">
+    <button class="close" mat-dialog-close>
         <mat-icon>cancel</mat-icon>
     </button>
 </div>

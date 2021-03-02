@@ -36,6 +36,8 @@ import { Pro2cComponent } from './components/products/pro2c/pro2c.component';
 import { Pro3Component } from './components/products/pro3/pro3.component';
 import { Pro4Component } from './components/products/pro4/pro4.component';
 import { EgComponent } from './components/eg/eg.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SignupComponent } from './components/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -69,14 +71,16 @@ import { EgComponent } from './components/eg/eg.component';
     Pro2cComponent,
     Pro3Component,
     Pro4Component,
-    EgComponent
+    EgComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    CarouselModule
+    CarouselModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

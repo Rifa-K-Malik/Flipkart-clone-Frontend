@@ -7,11 +7,12 @@ import { EgComponent } from './components/eg/eg.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { ProductsComponent } from './components/products/products.component';
+import { SignupComponent } from './components/signup/signup.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo : 'login',
+    redirectTo : 'home',
     pathMatch: 'full'
   },
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path: 'eg',
     component: EgComponent
+  },
+  {
+    path: 'signup',
+    component: SignupComponent
   }
 ];
 

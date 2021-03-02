@@ -13,7 +13,7 @@ export class CheckoutComponent {
   public rzp: any;
 
   public options: any = {
-    key: '', // add razorpay key here
+    key: 'rzp_test_ULx0fSRteDX4Qs', // add razorpay key here
     name: 'Rifa K Malik',
     description: 'Shopping',
     amount: 100, // razorpay takes amount in paisa
@@ -51,7 +51,9 @@ export class CheckoutComponent {
 
   paymentHandler(res: any) {
     this.zone.run(() => {
-      // add API call here
+      if (res){
+        alert(`Your Order has been successfully placed and payment ID is ${res.razorpay_payment_id}`)
+      }
     });
   }
 
