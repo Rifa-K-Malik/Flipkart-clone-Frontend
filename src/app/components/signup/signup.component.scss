@@ -1,0 +1,29 @@
+.signup{
+    background: linear-gradient(to bottom right, #33ccff 0%, #ffffff 100%);
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+
+
+
+
+.container{
+   border: 2px solid gray;
+   text-align: center;
+   margin: auto auto;
+   width: 500px;
+   padding: 50px 50px;
+   background-color: white;
+   .w1{
+       width: 100%;
+   }
+   .btn{
+    width: 100px;
+    height: 35px;
+    color: white;
+    background-color:  #2874f0;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+   }
+}
