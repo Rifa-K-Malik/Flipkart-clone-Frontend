@@ -38,7 +38,8 @@ import { Pro4Component } from './components/products/pro4/pro4.component';
 import { EgComponent } from './components/eg/eg.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SignupComponent } from './components/signup/signup.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
 @NgModule({
   declarations: [
     AppComponent,
@@ -81,6 +82,14 @@ import { SignupComponent } from './components/signup/signup.component';
     MaterialModule,
     CarouselModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    ToastrModule.forRoot({
+      positionClass: 'toast-bottom-center',
+      progressBar:true,
+      progressAnimation: 'decreasing',
+      timeOut:5000,
+      disableTimeOut:false
+    }), 
   ],
   providers: [],
   bootstrap: [AppComponent]
