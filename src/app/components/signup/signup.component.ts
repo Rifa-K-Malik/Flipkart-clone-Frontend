@@ -28,7 +28,7 @@ export class SignupComponent implements OnInit {
       email: [null, [Validators.required, Validators.email]],
       password: [null, Validators.required]
     })
-    console.log(this.signupForm)
+
   }
   submit(form) {
     if(this.signupForm.valid){
@@ -36,7 +36,7 @@ export class SignupComponent implements OnInit {
         if(result){
           this.router.navigate(['/'])
         }
-      }, error => console.log(error))      
+      })      
     }
   }
 }

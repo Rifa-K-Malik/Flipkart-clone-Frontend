@@ -13,7 +13,8 @@
     </div>
 
     <div class="navbar_b">
-        <button mat-flat-button (mouseenter) ="display1 = 'show1'" (mouseleave) = "display1 = 'hide1'" (click)="openDialog()">Login</button>
+        <button mat-flat-button (mouseenter)="display1 = 'show1'" (mouseleave)="display1 = 'hide1'"
+            (click)="openDialog()">{{user? user.fullName : 'Login'}}</button>
         <div class="btn_login mat-elevation-z2" [ngClass]="display1">
             <div class="d-flex justify-content-between btn_login_sn">
                 <span>New customer?</span>
@@ -53,7 +54,7 @@
 
 
     <div>
-        <div class="d-flex align-items-center navbar_s" >
+        <div class="d-flex align-items-center navbar_s">
             <span>
                 More
             </span>
@@ -102,4 +103,3 @@
 
 
 <!-- (click)="display == 'hide'? display = 'show': display ='hide'" -->
-    

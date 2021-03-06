@@ -40,6 +40,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { SignupComponent } from './components/signup/signup.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
+import { httpInterceptorProviders } from './interceptors';
+import { NgProgressModule } from 'ngx-progressbar';
+import { NgProgressHttpModule } from "ngx-progressbar/http";
 @NgModule({
   declarations: [
     AppComponent,
@@ -90,8 +93,16 @@ import { ToastrModule } from 'ngx-toastr';
       timeOut:5000,
       disableTimeOut:false
     }), 
+    NgProgressModule.withConfig({
+      spinnerPosition: "right",
+      color: "rgb(233, 64, 64)",
+      thick : true
+    }),
+    NgProgressHttpModule,
   ],
-  providers: [],
+  providers: [
+    httpInterceptorProviders
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

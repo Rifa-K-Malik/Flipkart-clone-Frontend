@@ -1,7 +1,7 @@
-import { Injectable, NgZone } from '@angular/core';
-import { MatSnackBar } from '@angular/material/snack-bar';
-import { ToastrService } from 'ngx-toastr';
-import { title } from 'process';
+import { Injectable, NgZone } from "@angular/core";
+import { MatSnackBar } from "@angular/material/snack-bar";
+import { ToastrService } from "ngx-toastr";
+
 
 @Injectable({
   providedIn: 'root'
@@ -16,8 +16,8 @@ export class NotificationService {
   showSuccess(message: string): void {
     // Had an issue with the snackbar being ran outside of angular's zone.
     this.zone.run(() => {
-      this.toastr.success(message, this.Says)
-      // this.snackBar.open(message, 'Close', {duration: 5000 });
+     // this.toastr.success(message, this.Says)
+       this.snackBar.open(message, 'Close', {duration: 5000 });
     });
   }
 
@@ -25,8 +25,8 @@ export class NotificationService {
     this.zone.run(() => {
       // The second parameter is the text in the button. 
       // In the third, we send in the css class for the snack bar.
-      this.toastr.error(message, this.Says)
-      // this.snackBar.open(message, 'Close', {panelClass: ['error'],duration: 5000});
+      // this.toastr.error(message, this.Says)
+       this.snackBar.open(message, 'Close', {panelClass: ['error'],duration: 5000});
     });
   }
   showInfo(message: string): void {
